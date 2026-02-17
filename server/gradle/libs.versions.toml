@@ -1,0 +1,19 @@
+[versions]
+kotlin = "2.2.21"
+spring-boot = "4.0.2"
+spring-cloud = "2025.1.0"
+spring-dependency-management = "1.1.7"
+jjwt = "0.12.5"
+redisson = "4.1.0"
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }
+
+[libraries]
+jjwt-api = { module = "io.jsonwebtoken:jjwt-api", version.ref = "jjwt" }
+jjwt-impl = { module = "io.jsonwebtoken:jjwt-impl", version.ref = "jjwt" }
+jjwt-jackson = { module = "io.jsonwebtoken:jjwt-jackson", version.ref = "jjwt" }
+redisson = { module = "org.redisson:redisson-spring-boot-starter", version.ref = "redisson" }
