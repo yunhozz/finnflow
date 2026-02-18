@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+app:
+  jwt:
+    secretKey: testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+    tokenType: Bearer
+    accessTokenValidTime: 6000000 # 10min
+    refreshTokenValidTime: 1209600000 # 2 weeks
